@@ -22,7 +22,12 @@
     -->
 
     <script>
-    
+        'use strict';
+
+        let inputs = document.querySelectorAll('input[type="text"]');
+        inputs.forEach(function (inputCarryover) {
+            inputCarryover.insertAdjacentHTML("afterend", "<br>");
+        })
     </script>
 </body>
 

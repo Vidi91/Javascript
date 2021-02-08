@@ -46,7 +46,18 @@
     -->
 
     <script>
-        
+        'use strict';
+
+        let cart = document.querySelectorAll('.product');
+        cart.forEach(function (product) {
+            product.style.background = "red";
+        })
+
+
+        let div = document.querySelectorAll('.productName');
+        div.forEach(function (name) {
+            name.style.fontSize = "24px";
+        })
     </script>
 </body>
 
